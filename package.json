@@ -1,0 +1,23 @@
+{
+  "name": "fe_green_shop_02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nguyet97/FE_Green_Shop_02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nguyet97/FE_Green_Shop_02/issues"
+  },
+  "homepage": "https://github.com/Nguyet97/FE_Green_Shop_02#readme",
+  "dependencies": {
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

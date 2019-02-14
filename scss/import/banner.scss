@@ -1,0 +1,23 @@
+.banner {
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	.banner_img {
+		position: relative;
+		i {
+			color: #fff;
+		}
+	}
+	.banner_circle {
+		position: absolute;
+		top: 91%;
+		left: 48%;
+		.cir_gr {
+		color: #3fb871;
+		}
+		a i:hover {
+			opacity: 0.5;
+		}
+	}
+}

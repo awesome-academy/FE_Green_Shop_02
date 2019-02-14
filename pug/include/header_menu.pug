@@ -1,0 +1,82 @@
+.container-fluid.about
+	.row.top
+		.container.top_page
+			.header_top.row
+				.header_top_left.col-md-5
+					i.far.fa-clock
+					a.navbar-brand(href='#') Open time: 8:00 - 18:00 Monday - Sunday
+				.header_top_middle.col-md-4
+						a(href='#')
+							i.fab.fa-facebook-f(title='Facebook!')
+						a(href='#')
+							i.fab.fa-twitter(title='Twitter!')
+						a(href='#')
+							i.fab.fa-tumblr(title='Pinterest!')
+						a(href='#')
+							i.fab.fa-dribbble(title='Dribbble!')
+				.header_top_right.col-md-3
+						a(href='../pug/Input.html')
+							i.fas.fa-user Đăng nhập
+						a(href='../pug/register.html')
+							i.fas.fa-user-plus Đăng kí							
+.header-banner
+	.container.content
+		.row.content_header
+			.content_galary.col-md-6
+				.content__galary__img1.col-md-5
+					img(src='../images/title.png')
+				.content__galary__img2.col-md-3
+					img(src='../images/hdt1.png')
+			.content_icon.col-md-6
+				a(href='#')
+					i.fas.fa-phone Hỗ trợ :  (04) 6674 2332 - (04) 3786 890
+				.header-search-home
+					.btn
+						span.icon_search 
+							i.fas.fa-search
+						input(type='text' placeholder='Tìm kiếm...')
+					.recyle
+						a(href='../pug/shopping_cart.html')
+							i.fas.fa-shopping-basket 
+								| 0 Sản phẩm
+.row.menu
+	.container.slide
+		nav.navbar.navbar-expand-md.navbar-dark
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#collapsibleNavbar')
+				span.navbar-toggler-icon
+			#collapsibleNavbar.collapse.navbar-collapse
+				.icon_menu
+					.menu_icon
+					.menu_icon
+					.menu_icon
+				ul.navbar-nav
+					li
+						a(href='../pug/HOME.html') Trang Chủ
+					li
+						a(href='../pug/Grid.html') Giới Thiệu
+					li.dropdown
+						a.dropdown-toggle(data-toggle='dropdown', href='../pug/Grid.html')
+							| Sản Phẩm
+							span.caret
+						ul.dropdown-menu
+							li
+								a(href='../pug/List.html') Sản Phẩm 1
+							li
+								a(href='../pug/List.html') Sản Phẩm 2
+							li
+								a(href='../pug/List.html') Sản Phẩm 3
+					li.dropdown
+						a.dropdown-toggle(data-toggle='dropdown', href='../pug/List.html')
+							| Sản Phẩm Mới
+							span.caret
+						ul.dropdown-menu
+							li
+								a(href='../pug/List.html') Sản Phẩm Mới 1
+							li
+								a(href='../pug/List.html') Sản Phẩm Mới 2
+							li
+								a(href='../pug/List.html') Sản Phẩm Mới 3
+					li
+						a(href='../pug/News.html') Tin Tức
+					li
+						a(href='../pug/contact.html') Liên Hệ

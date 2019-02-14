@@ -1,0 +1,270 @@
+@import "../scss/variable/color";
+@import "../scss/import/header_menu";
+.item_content {			
+	.post_grid3 {
+		padding: 0;
+		margin-top: 0;
+		&:hover {
+			color: $color-green;
+		}
+	}
+}
+.section_item_top {
+	margin-top: 0;
+	.stt2_spc {
+		h5 {
+			font-size: 20px;
+			color: $color-gray;
+		}
+		span {
+			border:none;
+			color: $color-green;
+		}
+	}
+	
+}
+.setion2_item1 {
+	margin-right: 0px;
+	}
+.stt2_spc {
+	width: 100%;
+    margin-bottom: 0px;
+    font-family: "RobotoSlab Bold";
+    padding-top: 28px;
+    color: $color-green;
+	i {
+		float: right;
+		color: $color-border;
+		margin-top: -15px;
+		width: 18px;
+	}
+	span {
+		border-bottom: 2px solid $color-green;
+		padding-bottom: 17px;
+		font-size: 16px;
+		font-weight:bold;
+	}
+	}
+.item11 {
+	padding: 6% 0px;
+	width: 100%;
+}
+.setion2_item1_item {
+	border :none;
+	margin: 10px 0px;
+	padding: 0;
+	ul {
+		padding: 0;
+		line-height: 44px;
+		width: 100%;
+		color: $color-gray;
+		li {
+			list-style: none;
+			font-size: 13px;
+			border-bottom: 1px solid $color-gray;
+    		padding-bottom: 0px;
+    		font-weight: normal;
+			i::before {
+				padding-right: 4px;
+			}
+			a {
+				color: $color-gray;
+			}
+			a:hover {
+				color: $color-green;
+			}
+		}
+		#color {
+			color: $color-green;
+		}
+	}
+}
+.setion2_item1_item1 {
+	padding-top :27px;
+	i {
+		&::before {
+			padding-right: 10px;
+			font-size: 20px;
+		}
+		&:hover {
+			background:white;
+			color: $color-gray;
+		}
+	}
+	.color_icon {
+		padding :0;
+	}
+	.color1_icon {
+		padding-bottom: 28px;
+		color: #98cb4a;
+	}
+	.color2_icon {
+		color: #913ccd;
+		padding-bottom: 28px;
+	}
+	.color3_icon {
+		color: #f7d842;
+		padding-bottom: 28px;
+	}
+	.color4_icon {
+		color: #f76d3c;
+		padding-bottom: 28px;
+	}
+	.color5_icon {
+		color: #5481e6;
+		padding-bottom: 28px;
+	}
+	.color6_icon {
+		color: #f15f74;
+		padding-bottom: 28px;
+	}
+}
+
+// row right
+.post_grid4 {
+	padding-right: 0;
+	.banner_right {
+	    padding-top: 28px;
+	    img {
+	    	width: 100%;
+			padding: 0;
+			margin: 0;
+	    }
+	}
+	.section_right1 {
+		margin-bottom: 30px;
+		margin-left: -14px;
+		margin-right: -14px;
+
+	}
+}
+.section_icon1_right {
+	text-align: center;
+	padding-bottom: 1%;
+	width: 100%;
+	border: 1px solid $color-border;
+	img {
+		width: 100%;
+		}
+	.section_icon1_item1_chung {
+		text-align: center;
+		padding-top :26px;
+		padding-bottom: 35px;
+		width: 100%;
+		i {
+			color: #febf01;
+			padding-bottom: 15px;
+			}
+		a.mainprice {
+			color: #ed1c24;
+			padding-right: 10px;
+			}
+		a.secondprice {
+			text-decoration: line-through;
+			color: #aaaaaa;
+			}
+}
+
+}
+// dropdown
+.section_right_ {
+	.section_right_left {
+		padding :0;
+		i.fa-th {
+			color: $color-green;
+		}
+		i {
+			padding-top: 14%;
+			padding-right: 15px;
+			color: $color-gray;
+			&:hover {
+				color: $color-green;
+				cursor: pointer;
+			}
+		}
+	}
+	.section_right_right {
+		padding: 5% 0;
+		a {
+			padding: 0 4%;
+		}
+		.dropbtn {
+			background-color: white;
+			color: $color-gray;
+			padding: 8px;
+			font-size: 16px;
+			cursor: pointer;
+			border: 1px solid $color-gray;
+			i {
+				padding-left: 15px;
+				color: black;
+			}
+		}
+		.dropdown, .show {
+			position: relative;
+			display: inline-block;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: white;
+			width: 100%;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+			a {
+				color: $color-gray;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				&:hover {
+					background-color: #f1f1f1;
+					color: black;
+				}
+			}
+		}
+		.dropdown:hover, .show:hover {
+			.dropdown-content {
+				display: block;
+			}
+			.dropbtn {
+				background-color: #3e8e41;
+			}
+		}
+	}
+		}
+
+.pagination_row {
+	position: relative;
+    left: 63%;
+    padding-top :75px;
+    padding-bottom : 130px;
+	.pagination {
+		display: inline-block;
+		a {
+			color: black;
+			float: left;
+			margin-right: 8px; 
+			padding: 8px 14px;
+			text-decoration: none;
+			transition: background-color .3s;
+			border: 1px solid #ddd;
+			&.active {
+				background-color: $color-green;
+				color: white;
+			}
+			&:hover:not(.active) {
+				background-color: $color-green;
+			}
+			&::after {
+				padding-right: 15px;
+			}
+		}
+		span {
+			padding-right: 20px;
+		}
+	}
+}
+
+
+// footer
+@import "../scss/import/footer";
