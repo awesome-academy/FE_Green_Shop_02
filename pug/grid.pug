@@ -1,0 +1,288 @@
+doctype html
+html
+	include ../pug/include/header
+	link(rel='stylesheet' href='../css/grid.css')
+	body 
+		include ../pug/include/header_menu
+		.row.item_content
+			.container.site-content2
+				.row.section_item_top
+					.stt2_spc
+						h5 Home
+							span /Danh sách sản phẩm
+				.row.section_item
+					.post_grid3.col-md-3
+						.row.setion2_item1
+							.stt2_spc
+								h5
+									span Danh mục sản phẩm
+								hr
+						.setion2_item1_item.row
+							ul
+								li
+									a(href='../pug/detail_item.html')
+										i.fas.fa-chevron-right Cây chậu treo ( 10 )
+								li#color
+									a(href='../pug/detail_item.html')
+										i.fas.fa-chevron-right Cây có hoa( 5 )
+								li
+									a(href='../pug/detail_item.html')
+										i.fas.fa-chevron-right Cây dây leo
+								li
+									a(href='../pug/detail_item.html')
+										i.fas.fa-chevron-right Cây để bàn
+								li
+									a(href='../pug/detail_item.html')
+										i.fas.fa-chevron-right Cây may mắn
+								li
+									a(href='../pug/detail_item.html')
+										i.fas.fa-chevron-right Cây trang trí
+								li
+									i.fas.fa-chevron-right Cây nội thất
+						.row.setion2_item1
+							.stt2_spc
+								h5
+									span Tìm theo giá
+								hr
+						.row.setion2_item1_item
+							ul
+								li
+									a(href='../pug/detail_item.html')
+										i.fas.fa-chevron-right 200.000 Đ - 400.000 Đ
+								li
+									a(href='../pug/detail_item.html')
+										i.fas.fa-chevron-right 400.000 Đ - 600.000 Đ
+								li
+									a(href='../pug/detail_item.html')
+										i.fas.fa-chevron-right 600.000 Đ - 800.000 Đ
+								li
+									a(href='../pug/detail_item.html')
+										i.fas.fa-chevron-right 800.000 Đ - 1 000.000 Đ
+								li
+									a(href='../pug/detail_item.html')
+										i.fas.fa-chevron-right 1 000.000 Đ - 2 000.000 Đ
+						.row.setion2_item1
+							.stt2_spc
+								h5
+									span Tìm theo màu
+						.row.setion2_item1_item1
+							.col-md-6.color_icon
+								.color1_icon
+									i.fas.fa-circle Xanh cây
+								.color2_icon
+									i.fas.fa-circle Tím
+								.color3_icon
+									i.fas.fa-circle Vàng
+									
+							.col-md-6
+								.color4_icon
+									i.fas.fa-circle Đỏ cam
+								.color5_icon
+									i.fas.fa-circle Xanh trời
+								.color6_icon
+									i.fas.fa-circle Hồng
+								
+					.post_grid4.col-md-9
+						.row.banner_right
+							img(src='../images/02_1grid.png')
+						.row.section_right_
+								.section_right_left.col-md-6
+									i.fas.fa-th
+									a(href='../pug/List.html')
+										i.fas.fa-th-list
+								.section_right_right.col-md-6
+									a Sắp xếp theo
+									.dropdown
+										button.dropbtn Tên sản phẩm
+											i.fas.fa-caret-down
+										.dropdown-content
+											a(href='#') Tên sản phẩm
+											a(href='#') Giá tiền
+											a(href='#') Đánh giá
+									a Show
+									.show
+										button.dropbtn 15
+											i.fas.fa-caret-down
+										.dropdown-content
+											a(href='#') 14
+											a(href='#') 13
+											a(href='#') 12
+						.row.section_right1
+							.item4.col-md-4
+								.section_icon1_right
+									a(href='../pug/detail_item.html')
+										img(src='../images/sp15.png')
+									.section_icon1_item1_chung Cây dạ lam
+										br
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star-half
+										br
+										a.mainprice 150.000 đ  
+										a.secondprice 250.000 đ
+							.item4.col-md-4
+								.section_icon1_right
+									a(href='../pug/detail_item.html')
+										img(src='../images/sp13.png')
+									.section_icon1_item1_chung Cây danh dự
+										br
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star-half
+										br
+										a.mainprice 150.000 đ  
+										a.secondprice 250.000 đ
+							.item4.col-md-4
+								.section_icon1_right
+									a(href='../pug/detail_item.html')
+										img(src='../images/sp11.png')
+									.section_icon1_item1_chung Cây chân chim
+										br
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star-half
+										br
+										a.mainprice 150.000 đ  
+										a.secondprice 250.000 đ
+								//- right row 2
+						.row.section_right1
+							.item4.col-md-4
+								.section_icon1_right
+									img(src='../images/sp2.png')
+									.section_icon1_item1_chung Cây cọ ta
+										br
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star-half
+										br
+										a.mainprice 150.000 đ  
+										a.secondprice 250.000 đ
+							.item4.col-md-4
+								.section_icon1_right
+									img(src='../images/sp8.png')
+									.section_icon1_item1_chung Cây dứa nhỏ
+										br
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star-half
+										br
+										a.mainprice 150.000 đ  
+										a.secondprice 250.000 đ
+							.item4.col-md-4
+								.section_icon1_right
+									img(src='../images/sp1.png')
+									.section_icon1_item1_chung Cây đa búp đỏ
+										br
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star-half
+										br
+										a.mainprice 150.000 đ  
+										a.secondprice 250.000 đ
+
+										//- section 2
+										//- content2
+							//- footer
+						.row.section_right1
+							.item4.col-md-4
+								.section_icon1_right
+									img(src='../images/sp12.png')
+									.section_icon1_item1_chung Cây chân chim
+										br
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star-half
+										br
+										a.mainprice 150.000 đ  
+										a.secondprice 250.000 đ
+							.item4.col-md-4
+								.section_icon1_right
+									img(src='../images/sp15.png')
+									.section_icon1_item1_chung Cây dứa nhỏ
+										br
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star-half
+										br
+										a.mainprice 150.000 đ  
+										a.secondprice 250.000 đ
+							.item4.col-md-4
+								.section_icon1_right
+									img(src='../images/sp11.png')
+									.section_icon1_item1_chung Cây cọ ta
+										br
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star-half
+										br
+										a.mainprice 150.000 đ  
+										a.secondprice 250.000 đ
+						.row.section_right1
+							.item4.col-md-4
+								.section_icon1_right
+									img(src='../images/sp2.png')
+									.section_icon1_item1_chung Cây dạ lam
+										br
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star-half
+										br
+										a.mainprice 150.000 đ  
+										a.secondprice 250.000 đ
+							.item4.col-md-4
+								.section_icon1_right
+									img(src='../images/sp8.png')
+									.section_icon1_item1_chung Cây danh dự
+										br
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star-half
+										br
+										a.mainprice 150.000 đ  
+										a.secondprice 250.000 đ
+							.item4.col-md-4
+								.section_icon1_right
+									img(src='../images/sp1.png')
+									.section_icon1_item1_chung Cây dứa nhỏ
+										br
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star
+										i.fas.fa-star-half
+										br
+										a.mainprice 150.000 đ  
+										a.secondprice 250.000 đ
+					.row.pagination_row
+						.pagination
+							span
+								a(href='#') Trang trước
+							span
+								a.active(href='#') 1
+								a(href='#') 2
+								a(href='#') 3
+								a(href='#') 4
+								a(href='#') Trang sau
+		include ../pug/include/footer
