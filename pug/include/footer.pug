@@ -1,0 +1,76 @@
+.row.footer
+	.container
+		.row.information
+			.information_icon.col-md-4
+				.information_name Kênh thông tin từ chúng tôi:
+				.information_icon 
+					a
+						i.fab.fa-facebook-f(title='Facebook')
+					a
+						i.i.fab.fa-youtube(title='Youtube')
+					a
+						i.fab.fa-tumblr(title='Pinterest')
+					a
+						i.i.fab.fa-vimeo-v(title='Vimeo')
+			.information_email.col-md-2
+				p Đăng ký nhận email từ chúng tôi
+			.information_button.col-md-6
+				i.fab.fa-telegram-plane
+				input.box(type='text')
+		hr
+		.row.company_information 
+			.banner_company_information.col-md-4
+				img(src='../images/title2.png')
+				p Green shop được thành lập từ 8/2010 được sự tin tưởng của khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển
+				i.fas.fa-mobile-alt Điện thoại : (84-4) 66.558.868
+				i.far.fa-envelope Email: info@dkt.com.vn
+			.customer_company_information.col-md-2
+				h5 Thông tin khách hàng
+				ul
+					-var array=["Tài khoản của tôi","Sản phẩm yêu thích","Lịch sử mua hàng","Chính sách đổi trả","Góp ý, khiếu nại"]
+					each val in array
+						li
+							i.fas.fa-chevron-right=val
+			.service_company_information.col-md-2
+				h5 Hỗ trợ dịch vụ
+				ul
+					-var array=["Hệ thống cửa hàng","Hướng dẫn mua hàng","Hướng dẫn thanh toán","Tích điểm đổi quà","Câu hỏi thường gặp"]
+					each val in array
+						li
+							i.fas.fa-chevron-right=val
+			.policy_company_information.col-md-2
+				h5 Chính sách ưu đãi
+				ul
+					-var array=["Chính sách giao hàng","Chính sách đổi trả sản phẩm","Chính sách bảo hành","Giới thiệu sản phẩm mới","Chính sách trả góp"]
+					each val in array
+						li
+							i.fas.fa-chevron-right=val
+			.news_company_information.col-md-2
+				h5 Tin tức
+				ul
+					-var array=["Tin mới","Khuyến mại","Tuyển dụng","Dowload","Tags"]
+					each val in array
+						li
+							i.fas.fa-chevron-right=val
+		hr
+		.row.contact_company
+			.col-md-7
+				.contact_company_left
+					ul
+						-var array=["Sitemap","Danh mục sản phẩm","Hợp tác","Thông tin liên hệ","Câu hỏi thường gặp"]
+							li
+								a=val
+			.col-md-5
+				.contact_company_right
+					ul
+						li
+							a
+								i.fab.fa-cc-visa
+							a
+								i.fab.fa-cc-mastercard
+							a
+								i.fab.fa-cc-paypal
+							a
+								i.fab.fa-cc-discover
+.row.idesign
+	p Thiết kế bởi Bizweb &copy;

@@ -1,0 +1,11 @@
+mixin product(img,name,price)
+	.row.item11
+		.col-md-5.section2_img
+			img(src=img)
+		.col-md-6.section2_5img= name
+			br
+			- for(var i = 0; i < 4; i++)
+				i.fas.fa-star
+			i.fas.fa-star-half
+			br
+			a.mainprice=price

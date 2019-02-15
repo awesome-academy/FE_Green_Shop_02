@@ -1,0 +1,108 @@
+doctype html
+html
+	include ../pug/include/header
+	link(rel='stylesheet' href='../css/grid.css')
+	body 
+		include ../pug/include/header_menu
+		.row.item_content
+			.container.site-content2
+				.row.section_item_top
+					.stt2_spc
+						h5 Home
+							span /Danh sách sản phẩm
+				.row.section_item
+					include ../pug/include/libary_grid
+					.post_grid4.col-md-9
+						.row.banner_right
+							img(src='../images/02_1grid.png')
+						.row.section_right_
+								.section_right_left.col-md-6
+									i.fas.fa-th
+									a(href='../html/list.html')
+										i.fas.fa-th-list
+								.section_right_right.col-md-6
+									a Sắp xếp theo
+									.dropdown
+										button.dropbtn Tên sản phẩm
+											i.fas.fa-caret-down
+										.dropdown-content
+											each val in ['Tên sản phẩm','Giá tiền','Đánh giá']
+												a(href='#')=val
+									a Show
+									.show
+										button.dropbtn 15
+											i.fas.fa-caret-down
+										.dropdown-content
+											each val in ['14','13','12']
+												a(href='#')=val
+						.row.section_right1
+							mixin grid(href,img,name)
+								.item4.col-md-4
+									.section_icon1_right
+										a(href=href)
+											img(src=img)
+										.section_icon1_item1_chung=name
+											br
+											each val in [1, 2, 3, 4]
+												i.fas.fa-star
+											i.fas.fa-star-half
+											br
+											a.mainprice 150.000 đ
+											a.secondprice 250.000 đ
+							-var title = [{link:"../html/detail_item.html", img:"../images/sp15.png", name:"Cây dạ lam"},{link:"../html/detail_item.html", img:"../images/sp13.png", name:"Cây danh dự"},{link:"../html/detail_item.html", img:"../images/sp11.png", name:"Cây chân chim"}]
+							-for(var i=0; i<title.length ; i++)
+								+grid(title[i]["link"],title[i]["img"],title[i]["name"])
+						.row.section_right1
+							mixin grid(href,img,name)
+								.item4.col-md-4
+									.section_icon1_right
+										a(href=href)
+											img(src=img)
+										.section_icon1_item1_chung=name
+											br
+											- for(var i = 0; i < 4; i++)
+												i.fas.fa-star
+											i.fas.fa-star-half
+											br
+											a.mainprice 150.000 đ
+											a.secondprice 250.000 đ
+							-var person = [{href:"../html/detail_item.html", images:"../images/sp2.png", lead:"Cây cọ ta"},{href:"../html/detail_item.html", images:"../images/sp8.png", lead:"Cây dứa nhỏ"},{href:"../html/detail_item.html", images:"../images/sp1.png", lead:"Cây đa búp đỏ"}]
+							-for(var i=0; i<person.length ; i++)
+								+grid(person[i]["href"],person[i]["images"],person[i]["lead"])
+								//- right row 2
+						.row.section_right1
+							mixin grid(href,img,name)
+								.item4.col-md-4
+									.section_icon1_right
+										a(href=href)
+											img(src=img)
+										.section_icon1_item1_chung=name
+											br
+											each val in [1, 2, 3, 4]
+												i.fas.fa-star
+											i.fas.fa-star-half
+											br
+											a.mainprice 150.000 đ
+											a.secondprice 250.000 đ
+							-var person = [{href:"../html/detail_item.html", images:"../images/sp12.png", lead:"Cây chân chim"},{href:"../html/detail_item.html", images:"../images/sp15.png", lead:"Cây dứa nhỏ"},{href:"../html/detail_item.html", images:"../images/sp11.png", lead:"Cây cọ ta"}]
+							-for(var i=0; i<person.length ; i++)
+								+grid(person[i]["href"],person[i]["images"],person[i]["lead"])
+						.row.section_right1
+							mixin grid(href,img,name)
+								.item4.col-md-4
+									.section_icon1_right
+										a(href=href)
+											img(src=img)
+										.section_icon1_item1_chung=name
+											br
+											each val in [1, 2, 3, 4]
+												i.fas.fa-star
+											i.fas.fa-star-half
+											br
+											a.mainprice 150.000 đ
+											a.secondprice 250.000 đ
+							-var pro = [{href:"../html/detail_item.html", images:"../images/sp2.png", lead:"Cây dạ lam"},{href:"../html/detail_item.html", images:"../images/sp8.png", lead:"Cây danh dự"},{href:"../html/detail_item.html", images:"../images/sp1.png", lead:"Cây dứa nhỏ"}]
+							-for(var i=0; i<pro.length ; i++)
+								+grid(pro[i]["href"],pro[i]["images"],pro[i]["lead"])
+						include ../pug/include/page
+		include ../pug/include/footer

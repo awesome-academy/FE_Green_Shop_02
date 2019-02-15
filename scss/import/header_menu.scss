@@ -1,0 +1,146 @@
+*{
+	box-sizing: border-box;
+}
+.row {
+	margin: 0;
+}
+body {
+	font-family: 'Arial';
+}
+.about {
+	padding : 0;
+	width: 100%;
+	.top {
+		background: #202020;
+		font-size: $font-size;
+		margin: 0;
+	}
+	.top_page {
+		color: $color-gray-dark;
+	}
+	.header_top {
+		height: 100%;
+	}
+		.header_top_left {
+			i {
+				color: $color-gray-dark;
+			}
+			a {
+				color: $color-gray-dark;
+				font-size: $font-size;
+			}
+		}
+		.header_top_middle {
+			padding: 0;
+			letter-spacing: 6px;
+			margin-top: 4px;
+			i {
+				color: $color-gray-dark;
+			}
+		}
+		.header_top_right {
+			margin-top: 4px;
+		}
+			a i {
+			padding-right: 38px;
+			color: $color-gray-dark;
+		}
+}
+// about
+.header-banner {
+	background: url('../images/hdt.png');
+	.content__galary__img1 {
+		width: 100%;
+		padding-top: 4%;
+	}
+	.content__galary__img2 {
+		padding: 0px;
+	}
+	.content_header {
+		img {
+			width: 100%;
+		}
+		.content_galary {
+			display: flex;
+			h2 {
+				font-family: 'VNF MuseoBook';
+				color: $color-green;
+			}
+			span {
+				font-family: 'VNF Shelia';
+			}
+		}
+	}
+	.content_icon {
+		padding-left: 0px;
+		margin: 0;
+		padding-top: 8px;
+		a {
+			color: $color-gray-dark;
+		    margin-left: 21px;
+			letter-spacing: 1px;
+		}
+	}
+		.header-search-home {
+			display: flex;
+			.btn {
+				position: relative;
+			}
+			span.icon_search {
+		    	border: none;
+				font-size: 10pt;
+				float: left;
+				color: #63717f;
+				top: 30%;
+    			left: 90%;
+				position: absolute;
+			}
+			input[type=text] {
+				width: 352px;
+				border: solid 1px #ccc;
+				border-radius: 50px;
+				padding: 6px 10px 6px 30px;
+			}
+			.recyle {
+				padding-top: 11px;
+				padding-left: 20px;
+			}
+		}
+}
+// header-banner
+.menu {
+	background: $color-green;
+	padding: 20px;
+	margin: 0;
+}
+ul.navbar-nav {
+	li a {
+	color: #ffffff;
+	font-size: $size;
+	text-transform: uppercase;
+	margin-left: 93px;
+	}
+}
+ul.dropdown-menu {
+	li {
+		a {
+			color: $color-green;
+			text-decoration: none;
+			margin-left: 24px;
+    		font-weight: bold;
+			&:hover {
+				color: white;
+				background: $color-green;
+			}
+		}
+	}
+}
+.icon_menu {
+	width: 35px;
+	.menu_icon {
+		width: 35px;
+		height: $width-padding;
+		background-color: white;
+		margin: 6px 0;
+	}
+}

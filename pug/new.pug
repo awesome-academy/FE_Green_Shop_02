@@ -1,0 +1,29 @@
+doctype html
+html
+	include ../pug/include/header
+	link(rel='stylesheet' href='../css/new.css')
+	body 
+		include ../pug/include/header_menu
+		.row.item_content
+			.container.site-content2
+				.row.section_item_top
+					.stt2_spc
+						h5 Home
+							span /Cây dạ lam
+				.row.section_item
+					.post_grid3.col-md-3
+						include ../pug/include/product_item
+						include ../pug/include/outstanding
+					.post_grid4.col-md-9
+						-var array=["../images/new_6.png","../images/new_7.png","../images/new_8.png"]
+						each value in array
+							.row.news_item_section
+								p.title Cách bố trí hoa chậu trước cửa ấn tượng  ngay lần đầu tiên
+								p.icon 
+									i.far.fa-calendar-minus 20/12/2015
+									i.far.fa-clock 11:20:00 AM
+									i.far.fa-comment-dots 0 Bình luận
+								img(src=value)
+								p.content Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa nhà luôn được đầu tư và trang trí khá bắt mắt. Cũng có thể nói đây là bộ mặt của ngôi nhà, là ấn tượng đầu tiên khi một vị khách ghé chơi nhà bạn đấy. Hãy cùng Sài Gòn Hoa tham khảo một vài cách bố trí chậu cây hoa cảnh ngay trước cửa nhà sao cho ấn tượng nhất nhé!
+				include ../pug/include/page
+		include ../pug/include/footer

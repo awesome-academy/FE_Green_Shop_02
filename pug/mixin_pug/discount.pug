@@ -1,0 +1,13 @@
+mixin discount(img,dis,name,price_left,price_right)
+	img(src=img)
+	.section_discount= dis
+	.section_icon1_item1_chung= name
+		br
+		i.fas.fa-star
+		i.fas.fa-star
+		i.fas.fa-star
+		i.fas.fa-star
+		i.fas.fa-star-half
+		br
+		a.mainprice= price_left
+		a.secondprice= price_right

@@ -1,0 +1,118 @@
+.footer {
+	background: #313131;
+	margin-top: 40px;
+	.information {
+		color: $color-gray-dark;
+		font-family: 'Arial';
+		font-weight: bold;
+		padding-top: 47px;
+		text-transform: uppercase;
+		.information_icon a i {
+			color: $color-gray-dark;
+			letter-spacing: 27px;
+		}
+		.information_email p {
+			font-size: $size;
+		}
+		.information_button {
+			i {
+				float: right;
+				background: $color-green;
+				padding: $width-small;
+				color: white;
+			}
+			.box {
+				float: right;
+				width: 76%;
+				height: 61%;
+				margin: 0;
+			}
+		}
+	}
+	hr {
+		background: $color-gray-dark;
+	}
+	.company_information {
+		color: $color-gray-dark;
+		margin-top: 40px;
+		.banner_company_information {
+			p {
+				line-height: 29px;
+				font-size: 12px;
+				font-family: 'Arial';
+			}
+			i {
+				line-height: 35px;
+			}
+			i::before {
+				padding-right: $font-size;
+				color: #3daa6a;
+			}
+		}
+		.customer_company_information , .service_company_information , .policy_company_information , .news_company_information {
+			margin: 30px 0px;
+			padding: 0;
+			h5 {
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: $size;
+				color: $color-green;
+			}
+			ul {
+				padding: 0;
+				line-height: 44px;
+				li {
+					list-style: none;
+					font-size: 12px;
+					i::before {
+						padding-right: 4px;
+					}
+				}
+			}
+		}
+		.service_company_information {
+			padding-left: 35px;
+		}
+		.policy_company_information {
+			padding-left: 25px;
+		}
+		.news_company_information {
+			padding-left: 60px;
+			margin-right: 0;
+		}
+	}
+}
+.contact_company {
+	.contact_company_left {
+		padding: 10px 0px;
+			ul {
+				padding: 0;
+				li {
+					display: inline;
+					padding-right: 20px;
+					a {
+						color: $color-gray-dark;
+					}
+				}
+			}
+	}
+	.contact_company_right {
+		float: right;
+			ul {
+				padding: $width-small $width-small;
+				li {
+					display: inline;
+					a {
+						padding-right: $width-small;
+						font-size: 18px;
+						color: $color-gray-dark;
+					}
+				}
+			}
+	}
+}
+.idesign {
+	background: #434343;
+	color: $color-gray-dark;
+	justify-content: center;
+}

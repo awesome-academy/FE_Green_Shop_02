@@ -1,0 +1,138 @@
+@import "../scss/variable/color";
+@import "../scss/import/header_menu";
+.item_content {			
+	.post_grid3 {
+		padding: 0;
+		margin-top: 0;
+		&:hover {
+			color: $color-green;
+		}
+	}
+}
+.section_item_top {
+	margin-top: 0;
+	.stt2_spc {
+		h5 {
+			font-size: 20px;
+			color: $color-gray;
+		}
+		span {
+			border: none;
+			color: $color-green;
+		}
+	}
+}
+@import "../scss/mixin_scss/libary_grid";
+// row right
+.post_grid4 {
+	padding-right: 0;
+	.banner_right {
+		padding-top: 28px;
+		img {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+	}
+	.section_right1 {
+		margin-bottom: 30px;
+		margin-left: -14px;
+		margin-right: -14px;
+	}
+}
+.section_icon1_right {
+	text-align: center;
+	padding-bottom: 1%;
+	width: 100%;
+	border: 1px solid $color-border;
+	img {
+		width: 100%;
+	}
+	.section_icon1_item1_chung {
+		text-align: center;
+		padding-top: 26px;
+		padding-bottom: 35px;
+		width: 100%;
+		i {
+			color: $color-star;
+			padding-bottom: $width-medium;
+		}
+		a.mainprice {
+			color: $color-pink;
+			padding-right: $width-small;
+		}
+		a.secondprice {
+			text-decoration: line-through;
+			color: $color-gray;
+		}
+	}
+}
+// dropdown
+.section_right_ {
+	.section_right_left {
+		padding: 0;
+		i.fa-th {
+			color: $color-green;
+		}
+		i {
+			padding-top: 14%;
+			padding-right: $width-medium;
+			color: $color-gray;
+			&:hover {
+				color: $color-green;
+				cursor: pointer;
+			}
+		}
+	}
+	.section_right_right {
+		padding: 5% 0;
+		a {
+			padding: 0 4%;
+		}
+		.dropbtn {
+			background-color: white;
+			color: $color-gray;
+			padding: 8px;
+			font-size: 16px;
+			cursor: pointer;
+			border: 1px solid $color-gray;
+			i {
+				padding-left: $width-medium;
+				color: black;
+			}
+		}
+		.dropdown, .show {
+			position: relative;
+			display: inline-block;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: white;
+			width: 100%;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+			a {
+				color: $color-gray;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				&:hover {
+					background-color: #f1f1f1;
+					color: black;
+				}
+			}
+		}
+		.dropdown:hover, .show:hover {
+			.dropdown-content {
+				display: block;
+			}
+			.dropbtn {
+				background-color: #3e8e41;
+			}
+		}
+	}
+}
+@import "../scss/mixin_scss/page";
+// footer
+@import "../scss/import/footer";

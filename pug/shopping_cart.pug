@@ -1,0 +1,60 @@
+doctype html
+html
+	include ../pug/include/header
+	link(rel='stylesheet' href='../css/shopping_cart.css')
+	body 
+		include ../pug/include/header_menu
+		.row.input
+			.container
+				.row.section_input1
+					.stt2_spc
+						h5 Home
+							span /Giỏ hàng
+				.row.input_text
+						h4 Giỏ hàng
+				.row.section_input2
+					.container.table-responsive
+						table.table.table-bordered
+							thead
+								tr
+									-var array=["Hình ảnh","Tên sản phẩm","Đơn giá","Số lượng","Thành tiền","Xóa"]
+									each val in array
+										th=val
+							tbody
+								-for(var i = 0; i < 3; i++)
+									tr
+										td.img
+											a(href='../html/detail_item.html')
+												img(src='../images/sp1.png')
+										td.name_item Cây văn phòng
+										td 270.000 đ
+										td.amount 
+											a 1
+										td 270.000 đ
+										td.trash
+											i.fas.fa-trash-alt
+				.row.input_box1
+					.col-lg-12.section
+						.comback
+							a(href='../html/home.html')
+								input(type='submit', value='Hủy đơn hàng' )
+						.register
+							a(href='../html/grid.html')
+								input(type='submit', value='Tiếp tục mua' )
+				.row.purchase
+					table.table.table-bordered.total_table
+						tbody
+							mixin sum(title,price)
+								tr
+									td=title
+									td=price
+							+sum('Tổng tiền (chưa thuế)','270.000 đ')
+							+sum('Thuế (vat 10%)','27.000 đ')
+							tr
+								td.name_purchase Tổng phải thanh toán
+								td.price_purchase 297.000 đ
+				.row.input_box1
+					.comback
+						a(href='../html/shopping_cart.html')
+							input(type='submit', value='Thanh toán')
+		include ../pug/include/footer

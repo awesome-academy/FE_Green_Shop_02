@@ -1,0 +1,127 @@
+@import "../scss/variable/color";
+@import "../scss/import/header_menu";
+//content
+@import "../scss/import/outstanding";
+// row right
+.post_grid4 {
+	margin-top: 0px;
+	.news_item_section {
+		margin-top: 33px;
+		.title {
+			width: 100%;
+			font-weight: bold;
+			&:hover {
+				color: $color-gray;
+			}
+		}
+		.icon {
+			i {
+				padding-right: $width-medium;
+				&::before {
+					color: $color-green;
+					padding-right: $width-small;
+				}
+			}
+		}
+		img {
+			width: 100%;
+		}
+		.content {
+			color: $color-gray;
+			font-size: $size;
+			text-align: left;
+			margin-top: $width-medium;
+		}
+	}
+}
+.comment {
+	margin-top: 50px;
+	h5#cmt {
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $color-gray;
+	}
+}
+.comment_item {
+	padding-top: 30px;
+	margin: 0;
+	.comment_item_section2 {
+		h5 {
+			padding: 0;
+		}
+		p.name_item1  {
+			color: $color-gray;
+			font-size: $font-size;
+		}
+		p.reply_item {
+			float: right;
+			font-style: italic;
+			font-size: $font-size;
+			text-decoration: underline;
+			&:hover {
+				color: $color-gray;
+			}
+		}
+		p.name_item2 {
+			font-style: italic;
+			color: $color-gray;
+			font-size: $font-size;
+		}
+	}
+}
+.reply_item {	
+	margin-top: -38px;
+}
+.comment_content {
+	.comment_content_item {
+		margin: 0;
+		padding: 4px;
+	}
+}
+#hname {
+	padding-left: 20px;
+}
+input[type=text] {
+	width: 100%;
+	padding: 12px 50px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: $size;
+	color: $color-gray;
+}
+input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 9px 41px;
+	margin: 8px 0;
+	border: 1px solid;
+	border-radius: 40px;
+	cursor: pointer;
+	&:hover {
+		background-color: #45a049;
+	}
+}
+.section_button {
+	margin-left: 85%;
+	input#btn:hover {
+		background: white;
+		color: $color-green;
+	}
+}
+input#btn:hover {
+	background: white;
+	color: $color-green;
+}
+.section_comment {
+	width: 100%;
+	margin-right: 0;
+}
+#bname {
+	padding: 25px 85% 90px 25px;
+}
+// footer
+@import "../scss/import/footer";

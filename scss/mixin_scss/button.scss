@@ -1,0 +1,14 @@
+.section_text1 {
+	color: #fff;
+	position: absolute;
+	top: 6%;
+	left: 12%;
+	background: #3fb871;
+	border-radius: 50%;
+	padding: $font-size;
+	&:hover {
+		background: white;
+		color: #3fb871;
+		cursor: pointer;
+	}
+}
