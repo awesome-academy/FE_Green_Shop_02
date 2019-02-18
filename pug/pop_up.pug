@@ -1,0 +1,24 @@
+doctype html
+html
+	include ../pug/include/header
+	link(rel='stylesheet' href='../css/pop_up.css')
+	body 
+		.container-fluid
+			.row.img
+				.container
+					.row.pop_up
+						.pop_up_img.col-md-5
+							.pop_up_img1 
+								img(src='../images/flowers.png')
+						.pop_up_content.col-md-7
+							.row.title1 Nhận tin tức từ chúng tôi
+							.row.title2 ĐĂNG KÝ EMAIL NGAY HÔM NAY
+							.row.pop_up_content_button
+								input.box(type='text' placeholder='Nhập email của bạn vào đây')
+								i.fab.fa-telegram-plane
+							.row.pop_up_content_body Đăng ký email ngay hôm nay để nhận các thông tin về sự kiện và các chương trình giảm giá từ chúng tôi
+							.row.checkbox_row
+								label.container
+									p Không hiển thị thông báo này nữa
+									input(type='checkbox')
+									span.checkmark

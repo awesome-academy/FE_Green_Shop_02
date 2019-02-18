@@ -1,0 +1,53 @@
+doctype html
+html
+	include ../pug/include/header
+	link(rel='stylesheet' href='../css/register.css')
+	body 
+		include ../pug/include/header_menu
+		.row.input
+			.container
+				.row.section_input1
+					.stt2_spc
+						h5 Home
+							span /Đăng kí
+				.row.section_input2
+					.col-md-6.form
+						.row.input_text
+							h4 Thông tin cá nhân
+						.row.input_box
+							form(action='/action_page.php')
+							label(for='fname') Họ và tên
+								i *
+							input#fname(type='text', name='firstname', placeholder='')
+							label(for='lname') Địa chỉ email
+								i *
+							input#lname(type='text', name='lastname', placeholder='')
+							
+						.row.checkbox_row
+							label.container
+									p Đăng kí nhận thông tin qua mail
+									input(type='checkbox')
+									span.checkmark
+						.row.input_text
+							h4 Thông tin tài khoản
+						.row.input_box
+							form(action='/action_page.php')
+							label(for='fname') Mật khẩu
+								i *
+							input#lname(type='text', name='lastname', placeholder='')
+						.row.input_box1
+							mixin contact(link,title)
+								.col-md-4
+									a(href=link)
+										input(type='submit', value=title)
+							+contact('../html/contact.html','QUAY LẠI')
+							+contact('../html/list.html','ĐĂNG KÍ')
+					.col-md-6.text_info
+						form(action='/action_page.php')
+							label(for='fname') Số ĐT
+								i *
+							input#fname(type='text', name='firstname', placeholder='')
+							label(for='lname') Website của bạn
+								i *
+							input#lname(type='text', name='lastname', placeholder='')
+		include ../pug/include/footer

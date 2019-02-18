@@ -1,0 +1,30 @@
+.pagination_row {
+	float: right;
+	margin-top: 117px;
+    margin-bottom: 40px;
+	.pagination {
+		display: inline-block;
+		margin: -39px;
+		padding-right: 35px;
+		a {
+			margin-right: 6px;
+			color: black;
+			float: left;
+			margin-right: 8px;
+			padding: 8px $size;
+			text-decoration: none;
+			transition: background-color .3s;
+			border: 1px solid #ddd;
+			&.active {
+				background-color: $color-green;
+				color: white;
+			}
+			&:hover:not(.active) {
+				background-color: $color-green;
+			}
+			&::after {
+				padding-right: $width-medium;
+			}
+		}
+	}
+}

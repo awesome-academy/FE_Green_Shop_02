@@ -1,0 +1,75 @@
+.container-fluid.about
+	.row.top
+		.container.top_page
+			.header_top.row
+				.header_top_left.col-md-5
+					i.far.fa-clock
+					a.navbar-brand(href='#') Open time: 8:00 - 18:00 Monday - Sunday
+				.header_top_middle.col-md-4
+						a(href='#')
+							i.fab.fa-facebook-f(title='Facebook!')
+						a(href='#')
+							i.fab.fa-twitter(title='Twitter!')
+						a(href='#')
+							i.fab.fa-tumblr(title='Pinterest!')
+						a(href='#')
+							i.fab.fa-dribbble(title='Dribbble!')
+				.header_top_right.col-md-3
+						a(href='../html/input.html')
+							i.fas.fa-user Đăng nhập
+						a(href='../html/register.html')
+							i.fas.fa-user-plus Đăng kí							
+.header-banner
+	.container.content
+		.row.content_header
+			.content_galary.col-md-6
+				.content__galary__img1.col-md-5
+					img(src='../images/title.png')
+				.content__galary__img2.col-md-3
+					img(src='../images/hdt1.png')
+			.content_icon.col-md-6
+				a(href='#')
+					i.fas.fa-phone Hỗ trợ :  (04) 6674 2332 - (04) 3786 890
+				.header-search-home
+					.btn
+						span.icon_search 
+							i.fas.fa-search
+						input(type='text' placeholder='Tìm kiếm...')
+					.recyle
+						a(href='../html/shopping_cart.html')
+							i.fas.fa-shopping-basket 
+								| 0 Sản phẩm
+.row.menu
+	.container.slide
+		nav.navbar.navbar-expand-md.navbar-dark
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#collapsibleNavbar')
+				span.navbar-toggler-icon
+			#collapsibleNavbar.collapse.navbar-collapse
+				.icon_menu
+					- for(var i = 0; i < 3; i++)
+						.menu_icon
+				ul.navbar-nav
+					li
+						a(href='../html/home.html') Trang Chủ
+					li
+						a(href='../html/grid.html') Giới Thiệu
+					li.dropdown
+						a.dropdown-toggle(data-toggle='dropdown', href='../html/grid.html')
+							| Sản Phẩm
+							span.caret
+						ul.dropdown-menu
+							each val in ['Sản Phẩm 1','Sản Phẩm 2','Sản Phẩm 3']
+								li
+									a(href='../html/list.html')=val
+					li.dropdown
+						a.dropdown-toggle(data-toggle='dropdown', href='../html/list.html')
+							| Sản Phẩm Mới
+							span.caret
+						ul.dropdown-menu
+							each val in ['Sản Phẩm Mới 1','Sản Phẩm Mới 2','Sản Phẩm Mới 3']
+								li
+									a(href='../html/list.html')=val
+					li
+						a(href='../html/new.html') Tin Tức
+					li
+						a(href='../html/contact.html') Liên Hệ

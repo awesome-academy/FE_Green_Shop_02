@@ -1,0 +1,40 @@
+doctype html
+html
+	include ../pug/include/header
+	link(rel='stylesheet' href='../css/input.css')
+	body 
+		include ../pug/include/header_menu
+		.row.input
+			.container
+				.row.section_input1
+					.stt2_spc
+						h5 Home
+							span /Đăng nhập
+				.row.section_input2
+					.col-md-6.form
+						.row.input_text
+							h4 Thông tin cá nhân
+						.row.input_box_form
+							form(action='/action_page.php')
+							label(for='fname') Email của bạn
+							input#fname(type='text', name='firstname', placeholder='')
+							label(for='lname') Mật khẩu
+							input#lname(type='text', name='lastname', placeholder='')
+						.row.checkbox_row
+							.col-md-4.checkbox_row_text
+								label.container
+									p Ghi nhớ tài khoản
+									input(type='checkbox')
+									span.checkmark
+							.col-md-4.checkbox_row_text
+								.input_text1 Bạn quên tài khoản ?
+						.input_box1
+							a(href='../html/grid.html')
+								input(type='submit', value='ĐĂNG NHẬP')
+					.col-md-6.text_info
+						h4.text_info_1 Bạn chưa có tài khoản ?
+						p.text_info_content Đăng ký tài khoản ngay để có thể mua hàng nhanh chóng và dễ dàng hơn ! Ngoài ra còn có rất nhiều chính sách và ưu đãi cho các thành viên citybike
+						.input_box1
+							a(href='../html/home.html')
+								input(type='submit', value='ĐĂNG KÍ')
+		include ../pug/include/footer

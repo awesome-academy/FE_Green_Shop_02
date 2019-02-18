@@ -1,0 +1,13 @@
+mixin item(img,name,price_left,price_right)
+	img(src=img)
+	.section_icon1_item1_chung= name
+		br
+		each val in [1, 2, 3, 4]
+			i.fas.fa-star
+		i.fas.fa-star-half
+		br
+		a.mainprice= price_left
+		a.secondprice= price_right
+
+//item_home----------------------------------------------------------
+

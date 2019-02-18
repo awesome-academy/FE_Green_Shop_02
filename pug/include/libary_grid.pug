@@ -1,0 +1,46 @@
+.post_grid3.col-md-3
+	.row.setion2_item1
+		.stt2_spc
+			h5
+				span Danh mục sản phẩm
+			hr
+	.setion2_item1_item.row
+		ul
+			-var array=["Cây chậu treo ( 10 )","Cây có hoa( 5 )","Cây dây leo","Cây để bàn","Cây may mắn","Cây trang trí","Cây nội thất"]
+			each value in array
+				li
+					a(href='../html/detail_item.html')
+						i.fas.fa-chevron-right=value
+	.row.setion2_item1
+		.stt2_spc
+			h5
+				span Tìm theo giá
+			hr
+	.row.setion2_item1_item
+		ul
+			-var array=["200.000 Đ - 400.000 Đ","400.000 Đ - 600.000 Đ","600.000 Đ - 800.000 Đ","800.000 Đ - 1 000.000 Đ","1 000.000 Đ - 2 000.000 Đ"]
+			each value in array
+				li 
+					a(href='../html/detail_item.html')
+						i.fas.fa-chevron-right=value
+	.row.setion2_item1
+		.stt2_spc
+			h5
+				span Tìm theo màu
+	.row.setion2_item1_item1
+		.col-md-6.color_icon
+			.color1_icon
+				i.fas.fa-circle Xanh cây
+			.color2_icon
+				i.fas.fa-circle Tím
+			.color3_icon
+				i.fas.fa-circle Vàng
+				
+		.col-md-6
+			.color4_icon
+				i.fas.fa-circle Đỏ cam
+			.color5_icon
+				i.fas.fa-circle Xanh trời
+			.color6_icon
+				i.fas.fa-circle Hồng
+				

@@ -1,0 +1,14 @@
+.section_discount {
+	color: #fff;
+	position: absolute;
+	top: 6%;
+	left: 12%;
+	background: #d64146;
+	border-radius: 50%;
+	padding: $font-size;
+	&:hover {
+		background: white;
+		color: red;
+		cursor: pointer;
+	}
+}

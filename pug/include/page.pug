@@ -1,0 +1,9 @@
+.row.pagination_row
+	.pagination
+		span
+			a(href='#') Trang trước
+		span
+			a.active(href='#') 1
+			each val in ['2','3','4']
+				a(href='#')= val
+			a(href='#') Trang sau

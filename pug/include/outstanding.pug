@@ -1,0 +1,39 @@
+.row.setion2_item1
+	.stt2_spc
+		h5
+			span Tin tức nổi bật
+		hr
+.row.setion2_item1_news
+
+	mixin new(img,content)
+		.row.news
+			.col-md-4.news_item1
+				img(src=img)
+			.col-md-8.news_item2 
+				a(href='../html/detail_new.html')
+					p=content
+	-var person = [{product:"Hướng dẫn lựa chọn và bố trí cây xanh trong phòng khách", image:"../images/new_1.png"},{product:"Những sai lầm nên tránh khi bố trí cây xanh trong nhà", image:"../images/new_2.png"},{product:"7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng", image:"../images/new_3.png"},{product:"Hướng dẫn lựa chọn cây cảnh trang trí trong văn phòng", image:"../images/new_4.png"},{product:"4 loại cây thích hợp bày trí ở khu vực đại sảnh", image:"../images/new_5.png"}]
+	-for(var  i = 0; i < person.length; i++)
+		+new(person[i]["image"],person[i]["product"])
+.row.setion2_item1
+	.stt2_spc
+		h5
+			span Blog tag
+		hr
+.row.setion2_item1_news1
+	.row.news_1
+		-var array=["Cây văn phòng","Cây phát lộc"]
+		each val in array
+			a(href='../html/detail_new.html').news_1_item=val
+	.row.news_1
+		-var array=["Cây xanh","Cây trang trí","Cây"]
+		each val in array
+			a(href='../html/detail_new.html').news_1_item1=val
+	.row.news_1
+		-var array=["Plants","Sức khỏe"]
+		each val in array
+			a(href='../html/detail_new.html').news_1_item2=val
+	.row.news_1
+		-var array=["Quà tặng","Lưu niệm"]
+		each val in array
+			a(href='../html/detail_new.html').news_1_item3=val

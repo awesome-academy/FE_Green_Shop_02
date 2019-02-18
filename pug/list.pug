@@ -1,0 +1,62 @@
+doctype html
+html
+	include ../pug/include/header
+	link(rel='stylesheet' href='../css/list.css')
+	body 
+		include ../pug/include/header_menu
+		.row.item_content
+			.container.site-content2
+				.row.section_item_top
+					.stt2_spc
+						h5 Home
+							span /Danh sách sản phẩm
+				.row.section_item
+					include ../pug/include/libary_grid
+					.post_grid4.col-md-9
+						.row.banner_right
+							img(src='../images/02_1grid.png')
+						.row.section_right_
+								.section_right_left.col-md-6
+									i.fas.fa-th
+									a(href='../html/Grid.html')
+										i.fas.fa-th-list
+								.section_right_right.col-md-6
+									a Sắp xếp theo
+									.dropdown
+										button.dropbtn Tên sản phẩm
+											i.fas.fa-caret-down
+										.dropdown-content
+											each val in ['Tên sản phẩm','Giá tiền','Đánh giá']
+												a(href='#')=val
+									a Show
+									.show
+										button.dropbtn 15
+											i.fas.fa-caret-down
+										.dropdown-content
+											each val in ['14','13','12']
+												a(href='#')=val
+						-var array=["../images/sp15.png","../images/sp1.png","../images/sp2.png","../images/sp5.png","../images/sp14.png"]
+						each val in array
+							.row.section_right1
+								.item4_1.col-md-3
+									a(href='../html/detail_item.html')
+										img(src=val)
+								.item4_2.col-md-9
+									.row
+										.section_icon1_item1_chung Cây ngọc ngân
+											br
+											each val in [1, 2, 3, 4]
+												i.fas.fa-star
+											i.fas.fa-star-half
+											br
+											p.text_item1 Cây Ngọc ngân là loại cây dành cho tình yêu! Đây là món quà bất ngờ để bạn tặng "người ấy".Ngọc ngân(Valentine) không chỉ đẹp ở phiến lá xanh đốm trắng
+											a.mainprice 279.000 đ 
+									.buy_now.row
+										.section_text2
+											a(href='../html/shopping_cart.html') Mua ngay
+										.section_search 
+											i.fas.fa-search
+										.section_heart
+											i.fas.fa-heart
+				include ../pug/include/page
+		include ../pug/include/footer

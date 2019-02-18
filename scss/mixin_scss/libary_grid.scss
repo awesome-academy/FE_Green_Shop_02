@@ -1,0 +1,96 @@
+.setion2_item1 {
+	margin-right: 0px;
+}
+.stt2_spc {
+	width: 100%;
+    margin-bottom: 0px;
+    font-family: "RobotoSlab Bold";
+    padding-top: $color-icon;
+    color: $color-green;
+	i {
+		float: right;
+		color: $color-border;
+		margin-top: -15px;
+		width: 18px;
+	}
+	span {
+		border-bottom: 2px solid $color-green;
+		padding-bottom: 17px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+}
+.item11 {
+	padding: 6% 0px;
+	width: 100%;
+}
+.setion2_item1_item {
+	border: none;
+	margin: 10px 0px;
+	padding: 0;
+	ul {
+		padding: 0;
+		line-height: 44px;
+		width: 100%;
+		color: $color-gray;
+		li {
+			list-style: none;
+			font-size: $font-size;
+			border-bottom: 1px solid $color-gray;
+    		padding-bottom: 0px;
+    		font-weight: normal;
+			i::before {
+				padding-right: 4px;
+			}
+			a {
+				color: $color-gray;
+			}
+			a:hover {
+				color: $color-green;
+			}
+		}
+		#color {
+			color: $color-green;
+		}
+	}
+}
+.setion2_item1_item1 {
+	padding-top: 27px;
+	i {
+		&::before {
+			padding-right: $width-small;
+			font-size: 20px;
+		}
+		&:hover {
+			background: white;
+			color: $color-gray;
+		}
+	}
+	.color_icon {
+		padding: 0;
+	}
+	.color1_icon {
+		padding-bottom: $color-icon;
+		color: #98cb4a;
+	}
+	.color2_icon {
+		color: #913ccd;
+		padding-bottom: $color-icon;
+	}
+	.color3_icon {
+		color: #f7d842;
+		padding-bottom: $color-icon;
+	}
+	.color4_icon {
+		color: #f76d3c;
+		padding-bottom: $color-icon;
+	}
+	.color5_icon {
+		color: #5481e6;
+		padding-bottom: $color-icon;
+	}
+	.color6_icon {
+		color: #f15f74;
+		padding-bottom: $color-icon;
+	}
+}

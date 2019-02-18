@@ -1,0 +1,135 @@
+@import "../scss/variable/color";
+@import "../scss/import/header_menu";
+// content input
+.input_text {
+	margin-top: 40px;
+	h4 {
+		color: $color-green;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+.table-responsive {
+	padding: 0;
+}
+.section_input1 {
+	margin-top: 20px;
+    font-size: $size;
+	.stt2_spc {
+		h5 {
+			font-size: $size;
+			color: $color-gray;
+		}
+		span {
+			border: none;
+			color: $color-green;
+		}
+	}
+}
+.section_input2 {
+	width: 100%;
+	margin-top: 55px;
+	thead {
+		background: #3fb871;
+		font-size: $size;
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+	tbody {
+		tr {
+			color: $color-gray;
+			td.img {
+				width: 171px;
+				height: 171px;
+				padding-top: 24px;
+			}
+			td {
+				padding-top: 74px;
+				text-align: center;
+			}
+			img {
+				width: 100%;
+			}
+			.name_item {
+				text-align: center;
+				text-transform: uppercase;
+				color: $color-green;
+				font-weight: initial;
+			}
+			.amount {
+				a {
+					border: 1px solid grey;
+					padding: 8px $size;
+					&:hover {
+						color: red;
+						border: 1px solid grey;
+						cursor: pointer;
+					}
+				}
+			}
+			.trash {
+				cursor: pointer;
+				&:hover {
+					color: black;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+.input_box1 {
+	margin-top: 28px;
+	text-transform: uppercase;
+	font-size: $size;
+	float: right;
+	.section {
+		padding: 0;
+	}
+	.comback {
+		float: left;
+		padding-right: 25px;
+	}
+	.register {
+		float: right;
+	}
+}
+input[type=submit] {
+    width: 100%;
+    background: white;
+    color: #3fb871;
+    padding: $size 20px;
+    margin: 8px 0;
+    border: 1px solid #3fb871;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    &:hover {
+		background-color: #45a049;
+		color: white;
+	}
+}
+.purchase {
+	clear: both;
+    margin-left: 50%;
+    padding: 42px 0px;
+	tbody {
+		tr {
+			td {
+				text-align: left;
+				padding: 35px 70px;
+				font-size: $size;
+				color: $color-green;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+			.name_purchase , .price_purchase {
+				background: $color-green;
+				color: white;
+			}
+		}
+	}
+}
+// footer
+@import "../scss/import/footer";

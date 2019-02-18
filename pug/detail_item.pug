@@ -1,0 +1,96 @@
+doctype html
+html
+	include ../pug/include/header
+	link(rel='stylesheet' href='../css/detail_item.css')
+	body 
+		include ../pug/include/header_menu
+		include ../pug/mixin_pug/item
+		.row.input
+			.container
+				.row.section_input1
+					.stt2_spc
+						h5 Home
+							span /Cây dạ lam
+				.row.detail_item
+					.col-md-5.detail_item_left
+						.row.detail_item_left1
+							a(href='../html/list.html')
+								img(src='../images/sp15.png')
+						.detail_item_left2
+							-var array=["../images/sp1.png","../images/sp5.png","../images/sp7.png","../images/sp12.png","../images/sp14.png"]
+							each value in array
+								a(href='../html/list.html').detail_item_img 
+									img(src=value)
+					.col-md-7.detail_item_right
+						.row
+							.section_icon1_item1_chung Cây dạ lam
+								br
+								- for(var i = 0; i < 4; i++)
+									i.fas.fa-star
+								i.fas.fa-star-half
+								br
+								a.mainprice 4.099.000 đ
+								a.secondprice 4.099.000 đ
+						hr
+						.row
+							p.detail_item_right_content Cây mọc thành bụi thưa,thân vương thẳng với chiều cao cây trung bình từ 0,8m-1,2m.Lá hình cứng,mép lá ngu gân lá nổi rõ,phiến rộng khoảng từ 15cm-20cm.Lá có màu xanh đậm ở mặt trên,quanh gân lá có màu trắng sữa mặt dưới lá nhạt màu hơn.Lá cây dạ lam mọc cách,cuống lá dài khi rụng để lại các khía màu nâu nhạt.
+						hr
+						.amount.row
+							a.amount_item Số lượng
+							a.amount_icon -
+							a.amount_icon1 1
+							a.amount_icon +
+						hr
+						.buy_now.row
+							.section_text2 
+								a(href='../html/shopping_cart.html') Mua ngay
+							.section_search 
+								i.fas.fa-search
+							.section_heart
+								i.fas.fa-heart
+						.icon_item_right.row
+							.icon_item_right1
+								i.fab.fa-facebook Like
+							.icon_item_right11 0
+							.icon_item_right2
+								i.fab.fa-twitter-square Tweet
+							.icon_item_right3
+								i.fab.fa-google-plus-g 1
+							.icon_item_right11 0
+							.icon_item_right4 + Share
+				.row.detail_item_content 
+					.container
+						ul.nav.nav-tabs
+							li.active
+								a(href='#') Thông tin sản phẩm
+							li
+								a(href='../html/detail_new.html') Khách hàng đánh giá
+							li
+								a(href='#') Thẻ tag
+						br
+						.detail_item_content_section
+							p Tên phổ thông: Dạ lam,Huỳnh tinh cảnh,Dong vằn
+							p Tên khoa học : Calathea zebrina
+							p Ho thực vật : Marantaceae (Củ dong)
+							p Chiêu cao : 0,8-1,2m
+							p Cây dạ lam có nguồn gốc từ Brazil, được du nhập và phân bố rộng ở khắp Việt Nam
+							p Cây mọc thành bụi thưa,thân vương thẳng với chiều cao cây trung bình từ 0,8m-1,2m.Lá hình cứng,mép lá ngu gân lá nổi rõ,phiến rộng khoảng từ 15cm-20cm.Lá có màu xanh đậm ở mặt trên,quanh gân lá có màu trắng sữa mặt dưới lá nhạt màu hơn.Lá cây dạ lam mọc cách,cuống lá dài khi rụng để lại các khía màu nâu nhạt.
+							p Cây dạ lam thuộc loại cây chịu bóng bán phần hoặc toàn phần,nhu cầu nước tương đối cao.Cây được nhân giống  từ tách bụi,cây mọc khỏe,tốc độ sinh trưởng nhanh với sức sống mạnh.
+							p Đây là loại cây có dáng đẹp,màu lá ướt mát,tươi khỏe,cây rất phù hợp trồng chậu trang trí nội thất-văn phòng
+							p Ngoài ra,cây còn có đặc điểm lọc khí,làm xanh mát môi trường,giúp điều hòa không khí,đặc biệt tốt cho những môi trường thường xuyên sử dụng các loại máy móc tảng nhiệt.Có thể bày cây ở hành lay hoặc ở giữa sảnh,đặt ở cạnh bàn làm việc hoặc trang trí các góc phòng có diện tích trung bình
+				.row.detail_item_section
+					.stt2_spc
+						h5 
+							span Sản phẩm cùng loại
+						i.fas.fa-chevron-circle-right
+						i.fas.fa-chevron-circle-left
+						hr
+				.row.detail_item_section_content
+					-var person = [{product:"Cây cọ Nhật", price:"260.000 đ", discout:"260.000 đ" , image:"../images/sp11.png"},{product:"Cây Hồng Môn", price:"260.000 đ", discout:"260.000 đ" , image:"../images/sp1.png"},{product:"Cây phát lộc", price:"260.000 đ", discout:"260.000 đ" , image:"../images/sp8.png"},{product:"Cây Kim Ngân", price:"260.000 đ", discout:"260.000 đ" , image:"../images/sp12.png"}]
+					-for(var i = 0 ; i < person.length; i ++)
+						.col-md-3#detail
+							.section_content2_item1_top
+								+item(person[i]['image'],person[i]['product'],person[i]['price'],person[i]['discout'])
+		include ../pug/include/footer
+		
+		

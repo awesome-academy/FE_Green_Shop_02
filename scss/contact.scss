@@ -1,0 +1,100 @@
+@import "../scss/variable/color";
+@import "../scss/import/header_menu";
+// content input
+.section_input1 {
+	margin-top: 20px;
+    font-size: $size;
+	.stt2_spc {
+		h5 {
+			font-size: $size;
+			color: $color-gray;
+		}
+		span {
+			border: none;
+			color: $color-green;
+		}
+	}
+}
+.section_input2 {
+	.form {
+		padding: 0;
+	}
+	.input_text {
+		margin-top: 14%;
+    	color: $color-green;
+    	text-transform: uppercase;
+    	h4 {
+			font-weight: bold;
+		}
+	}
+	.input_box {
+		margin-top: 60px;
+		font-size: $font-size;
+		color: $color-gray;
+		input.comment {
+			padding-bottom: 200px;
+		}
+		i {
+			color: red;
+		}
+	}
+	.input_box1 {
+		margin-top: 30px;
+	}
+}
+.text_info {
+	margin-top: 6%;
+	padding-left: 46px;
+	color: $color-gray;
+	p {
+		line-height: 29px;
+		font-size: 12px;
+		font-family: 'Arial';
+	}
+	i {
+		line-height: 35px;
+		display: inherit;
+	}
+	i::before {
+		padding-right: $font-size;
+		color: #3daa6a;
+	}
+	.map_text {
+		padding-left: 9px;
+		margin-top: 34px;
+		color: $color-gray;
+	}
+}
+.map {
+	margin-top: 80px;
+	.map_content {
+		iframe {
+			width: 100%;
+			height: 490px;
+		}
+	}
+}
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=submit] {
+	width: 30%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: 1px solid;
+	border-radius: 40px;
+	cursor: pointer;
+	&:hover {
+		background-color: #45a049;
+	}
+}
+// footer
+@import "../scss/import/footer";

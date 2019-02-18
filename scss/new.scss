@@ -1,0 +1,40 @@
+@import "../scss/variable/color";
+@import "../scss/import/header_menu";
+// content
+@import "../scss/import/outstanding";
+// row right
+.post_grid4 {
+	margin-top: 0px;
+	.news_item_section {
+		margin-top: 33px;
+		.title {
+			width: 100%;
+			font-weight: bold;
+			&:hover {
+				color: $color-gray;
+				cursor: pointer;
+			}
+		}
+		.icon {
+			i {
+				padding-right: $width-medium;
+				&::before {
+					color: $color-green;
+					padding-right: $width-small;
+				}
+			}
+		}
+		img {
+			width: 100%;
+		}
+		.content {
+			color: $color-gray;
+			font-size: $size;
+			text-align: left;
+			margin-top: $width-medium;
+		}
+	}
+}
+@import "../scss/mixin_scss/page";
+// footer
+@import "../scss/import/footer";

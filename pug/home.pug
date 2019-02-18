@@ -1,0 +1,138 @@
+doctype html
+html
+	include ../pug/include/header
+	link(rel='stylesheet' href='../css/home.css')
+	body 
+		include ../pug/include/header_menu
+		include ../pug/include/banner
+		include ../pug/mixin_pug/item
+		include ../pug/mixin_pug/discount
+		include ../pug/mixin_pug/button
+		include ../pug/mixin_pug/product
+		.row.item_top
+			.container.site-content1
+				.row.spnb 
+					.spnb_stt1
+						h2 
+							span Sản phẩm nổi bật
+						hr
+					.post-grid1.col-md-6
+						.row.item1_left1_section
+							img(src='../images/sp4.png')
+							.section_text1 New
+							.section_text2 
+								a(href='../html/shopping_cart.html') Mua ngay
+							.section_search 
+								i.fas.fa-search
+							.section_icon1_item1_chung Cây chân chim
+								br
+								- for(var i = 0; i < 4; i++)
+									i.fas.fa-star
+								i.fas.fa-star-half
+								br
+								a.mainprice 150.000 đ  
+								a.secondprice 250.000 đ
+						.row.item2_left2_section
+							.item1.col-md-6
+								.section_icon1
+									+item('../images/sp11.png','Cây cọ ta','150.000 đ','250.000 đ')
+							.item1.col-md-6
+								.section_icon2
+									+item('../images/sp6.png','Cây dứa nhỏ','375.000 đ ','250.000 đ')
+					.post-grid2.col-md-6
+						.row.item2_right2_section
+							.item1.col-md-6
+								.section_icon1
+									+discount('../images/sp5.png','-50%','Cây dạ lam','500.000 đ','250.000 đ')
+							.item1.col-md-6
+								.section_icon2
+									+button('../images/sp15.png','New','Cây danh dự','850.000 đ','250.000 đ')
+						.row.item1_right1_section1
+							+discount('../images/sp3.png','-50%','Cây đa búp đỏ','1.000.000 đ','250.000 đ')
+		.row.item_content
+			.container.site-content2
+				.row.section_item
+					.post_grid3.col-md-3
+						.row.setion2_item1
+							.stt2_spc
+								h5
+									span Sản phẩm mua nhiều
+								hr
+						.row.setion2_item2
+							-var home = [{img:"../images/sp16.png",name:"Cây chân chim",price:"250.000 đ"},{img:"../images/sp9.png",name:"Cây Dạ Lam",price:"250.000 đ"},{img:"../images/sp15.png",name:"Cây Danh Dự",price:"250.000 đ"},{img:"../images/sp13.png",name:"Cây đa búp đỏ",price:"250.000 đ"},{img:"../images/sp5.png",name:"Cây cọ ta",price:"250.000 đ"},{img:"../images/sp6.png",name:"Cây dứa nhỏ",price:"250.000 đ"}]
+							-for(var i=0 ; i<home.length; i++ )
+								+product(home[i]["img"],home[i]["name"],home[i]["price"])
+					.post_grid4.col-md-9
+						.row.item_topright1
+							.stt2_spc
+								h5 
+									span Sản phẩm khuyến mại
+								i.fas.fa-chevron-circle-right
+								i.fas.fa-chevron-circle-left
+								hr
+						.row.section_right1
+							.item4.col-md-4
+								.section_icon1_right
+									+discount('../images/sp15.png','-25%','Cây danh dự','475.000 đ','250.000 đ')
+							.item4.col-md-4
+								.section_icon1_right
+									+discount('../images/sp13.png','-10%','Cây dứa nhỏ','668.000 đ','250.000 đ')
+							.item4.col-md-4
+								.section_icon1_right
+									+item('../images/sp11.png','Cây cọ ta','770.000 đ','250.000 đ')
+						.row.section_right2
+							-var tree = [{link:"../images/sp2.png",title:"Cây danh dự",price1:"555.000 đ",price2:"250.000 đ"},{link:"../images/sp7.png",title:"Cây dứa nhỏ",price1:"780.000 đ",price2:"250.000 đ"},{link:"../images/sp1.png",title:"Cây cọ ta",price1:"680.000 đ",price2:"250.000 đ"}]
+							-for(var i=0 ; i<tree.length; i++ )
+								.item4.col-md-4
+									.section_icon1_right
+										+item(tree[i]["link"],tree[i]["title"],tree[i]["price1"],tree[i]["price2"])
+		.row.section_content2
+			.container
+				.row.section_content2_img
+					img(src='../images/st3.png')
+				.row
+					.stt2_spc
+						h5 
+							span Sản phẩm khuyến mại
+						i.fas.fa-chevron-circle-right
+						i.fas.fa-chevron-circle-left
+						hr
+				.row.section_content2_item1
+					.col-md-3
+						.section_content2_item1_top
+							+button('../images/sp15.png','New','Cây danh dự','250.000 đ','250.000 đ')
+					-var item_home = [{link1:"../images/sp7.png",title1:"Cây xương rồng",price1:"250.000 đ",price2:"250.000 đ"},{link1:"../images/sp13.png",title1:"Cây dạ lam",price1:"250.000 đ",price2:"250.000 đ"},{link1:"../images/sp11.png",title1:"Cây dứa nhỏ",price1:"250.000 đ",price2:"250.000 đ"}]
+					-for(var i=0 ; i<item_home.length; i++ )
+						.col-md-3
+							.section_content2_item1_top
+								+item(item_home[i]["link1"],item_home[i]["title1"],item_home[i]["price1"],item_home[i]["price2"])
+				.row.section_content2_item2
+					-var product_home = [{link2:"../images/sp1.png",title2:"Cây danh dự",price1:"250.000 đ",price2:"250.000 đ"},{link2:"../images/sp5.png",title2:"Cây dạ lam",price1:"250.000 đ",price2:"250.000 đ"},{link2:"../images/sp2.png",title2:"Cây chân chim",price1:"250.000 đ",price2:"250.000 đ"},{link2:"../images/sp15.png",title2:"Cây đa búp đỏ",price1:"250.000 đ",price2:"250.000 đ"}]
+					-for(var i=0 ; i<product_home.length; i++ )
+						.col-md-3
+							.section_content2_item1_top
+								+item(product_home[i]["link2"],product_home[i]["title2"],product_home[i]["price1"],product_home[i]["price2"])
+		.row.section_content3
+			.container
+				.row
+					.stt2_spc
+						h5 
+							span Tin tức
+						i.fas.fa-chevron-circle-right
+						i.fas.fa-chevron-circle-left
+						hr
+				.row.section_content3_item3
+					mixin home(img,content1,content2)
+						.col-md-4
+							.section_content3_item3_tt
+								img(src=img)
+								.section_icon1_item1_chung 
+									h6.title_tt Thứ 7 ,ngày 31, tháng 12, năm 2015
+									p.content_tt1=content1 
+									p.content_tt2=content2
+									p.end Đọc tiếp
+					-var content = [{link3:"../images/tt-1.png",content1:"15 thiết kế phòng ngủ tuyệt đẹp làm vạn người mê",content2:"Cùng Sài Gòn Hoa tìm hiểu một vài xu hướng thiết kế sân vườn được ưa chuộng hiên nay nhé ! Kết hợp hàng rào"},{link3:"../images/tt-2.png",content1:"Tạo Tiểu Cảnh Góc Sân Cho Nhà Phố, Biệt Thự Đẹp",content2:"Khi bước từ ngoài ngõ vào hay từ trong nhà đi ra, góc sân luôn là điểm nhìn đầu tiên của chúng ta"},{link3:"../images/tt-3.png",content1:"Cách bố trí hoa chậu trước cửa ấn tượng",content2:"Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa"}]
+					-for(var i=0;i<content.length;i++)
+						+home(content[i]["link3"],content[i]["content1"],content[i]["content2"])
+								//- footer 
+		include ../pug/include/footer

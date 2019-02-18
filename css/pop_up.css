@@ -1,0 +1,103 @@
+body {
+  background: #f1eeeb;
+  font-size: 13px;
+  margin: 0;
+}
+
+.pop_up {
+  width: 100%;
+  margin-top: 15%;
+}
+.pop_up .pop_up_img1 img {
+  width: 100%;
+  padding: 0;
+}
+.pop_up .pop_up_content {
+  padding-left: 142px;
+}
+.pop_up .pop_up_content .title1 {
+  font-size: 37px;
+  font-family: "Time New Roman";
+  color: #636363;
+}
+.pop_up .pop_up_content .title2 {
+  font-size: 23px;
+  font-family: "Time New Roman";
+  color: #3fb871;
+}
+.pop_up .pop_up_content .pop_up_content_button {
+  margin-top: 35px;
+}
+.pop_up .pop_up_content .pop_up_content_button i {
+  float: right;
+  background: #3fb871;
+  padding: 10px;
+  color: white;
+}
+.pop_up .pop_up_content .pop_up_content_button .box {
+  float: right;
+  width: 76%;
+  padding-left: 15px;
+}
+.pop_up .pop_up_content .pop_up_content_body, .pop_up .pop_up_content .checkbox_row {
+  font-size: 14px;
+  color: #898989;
+}
+.pop_up .pop_up_content .pop_up_content_body {
+  margin-top: 16px;
+  line-height: 29px;
+  padding-right: 127px;
+}
+.pop_up .pop_up_content .checkbox_row {
+  margin-top: 31px;
+}
+.pop_up .pop_up_content .checkbox_row p {
+  font-size: 14px;
+}
+.pop_up .pop_up_content .checkbox_row .container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.pop_up .pop_up_content .checkbox_row .container input {
+  width: 0;
+}
+.pop_up .pop_up_content .checkbox_row .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+}
+.pop_up .pop_up_content .checkbox_row .container input:checked ~ .checkmark {
+  background-color: green;
+}
+.pop_up .pop_up_content .checkbox_row .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.pop_up .pop_up_content .checkbox_row .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.pop_up .pop_up_content .checkbox_row .container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=pop_up.css.map */
